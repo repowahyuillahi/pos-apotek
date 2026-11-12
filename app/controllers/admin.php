@@ -40,7 +40,7 @@ switch ($page) {
         break;
 
     case 'laporan':
-        require_once __DIR__ . '/../views/admin/laporan.php';
+        require_once __DIR__ . '/../controllers/LaporanController.php';
         break;
 
     default:

@@ -23,11 +23,8 @@ switch ($page) {
         break;
 
     case 'laporan_penjualan':
-        require_once __DIR__ . '/../views/keuangan/laporan_penjualan.php';
-        break;
-
     case 'laporan_keu':
-        require_once __DIR__ . '/../views/keuangan/laporan_keu.php';
+        require_once __DIR__ . '/../controllers/LaporanController.php';
         break;
 
     default:
