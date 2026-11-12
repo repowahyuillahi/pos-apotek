@@ -97,7 +97,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($postAction === 'checkout') {
         // Redirect ke halaman checkout
-        header('Location: ' . BASE_URL . '/pos?action=checkout');
+        header('Location: ' . BASE_URL . '/pos/checkout.php');
+        exit;
+    }
+
+    // Routing untuk action=checkout (kalau dibuka langsung)
+    if (isset($_GET['action']) && $_GET['action'] === 'checkout') {
+        require_once __DIR__ . '/../views/pos/checkout.php';
         exit;
     }
 }

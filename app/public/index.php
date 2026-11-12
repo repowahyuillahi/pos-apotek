@@ -25,6 +25,7 @@ $routes = [
     '/login'     => __DIR__ . '/../views/login/login.php',
     '/logout'    => function (): void { require_login(); logout(); },
     '/pos'       => __DIR__ . '/../controllers/pos.php',
+    '/pos/cetak' => __DIR__ . '/../views/pos/cetak.php',
     '/admin'     => __DIR__ . '/../controllers/admin.php',
     '/owner'     => __DIR__ . '/../controllers/owner.php',
     '/keuangan'  => __DIR__ . '/../controllers/keuangan.php',
