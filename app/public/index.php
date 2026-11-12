@@ -24,10 +24,10 @@ $routes = [
     '/'          => __DIR__ . '/../views/landing/index.php',
     '/login'     => __DIR__ . '/../views/login/login.php',
     '/logout'    => function (): void { require_login(); logout(); },
-    '/pos'       => __DIR__ . '/../views/pos/index.php',
-    '/admin'     => __DIR__ . '/../views/admin/dashboard.php',
-    '/owner'     => __DIR__ . '/../views/owner/dashboard.php',
-    '/keuangan'  => __DIR__ . '/../views/keuangan/dashboard.php',
+    '/pos'       => __DIR__ . '/../controllers/pos.php',
+    '/admin'     => __DIR__ . '/../controllers/admin.php',
+    '/owner'     => __DIR__ . '/../controllers/owner.php',
+    '/keuangan'  => __DIR__ . '/../controllers/keuangan.php',
 ];
 
 // Jika path belum terdaftar, fallback ke landing page
